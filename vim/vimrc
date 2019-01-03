@@ -1,0 +1,28 @@
+" .vimrc
+"
+" Maintained by Shawn Sichak
+
+let $VIM_HOME=$HOME.'/.vim'
+
+""" General Configuration
+if filereadable(expand('$VIM_HOME/general.vim'))
+  source $VIM_HOME/general.vim
+endif
+if filereadable(expand('$VIM_HOME/key-mapping.vim'))
+  source $VIM_HOME/key-mapping.vim
+endif
+if filereadable(expand('$VIM_HOME/visual.vim'))
+  source $VIM_HOME/visual.vim
+endif
+
+""" Plugin Configuration
+" All the vim plugins are managed by 'vim-plug'
+" List & configuration of plugins separated to several files 'plugins.*.vim'
+if filereadable(expand('$VIM_HOME/plugins.vim'))
+  source $VIM_HOME/plugins.vim
+endif
+
+""" Theme Configuration
+if filereadable(expand('$VIM_HOME/theme.vim'))
+  source $VIM_HOME/theme.vim
+endif

@@ -1,0 +1,38 @@
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+ZSH_THEME="sichaks"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
+
+# User configuration
+source $ZSH/oh-my-zsh.sh
+
+# Auto move into directory without 'cd'
+setopt AUTO_CD
+
+# Set brew Path
+[[ :$PATH: == *:$HOME/.bin:* ]] || PATH=$HOME/.bin:$PATH
+
+export EDITOR="vim"
+
+# vi style incremental search
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+bindkey '^P' history-search-backward
+bindkey '^N' history-search-forward
+
+# Set JDK Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/java/Contents/Home
+export PATH="$JAVA_HOME:$PATH"
+
+# Ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# Aliases
+alias vi=vim

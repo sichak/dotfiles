@@ -1,0 +1,9 @@
+# .gitignore for tmux
+#
+# Maintained by Shawn Sichak
+
+# TMUX Plugins
+plugins
+
+# TMUX environments
+resurrect

@@ -1,0 +1,6 @@
+# .zshenv
+#
+# Maintained by Shawn Sichak
+
+
+DEBIAN_PREVENT_KEYBOARD_CHANGES=yes
