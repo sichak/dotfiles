@@ -24,4 +24,4 @@ $ vim +PlugInstall +qall now
 
 ## <a name="license">License
 
-- [MIT Liense](https://github.com/posquit0/node-iamporter/blob/master/LICENSE)
+- [MIT Liense](https://github.com/sichak/dofiles/blob/master/LICENSE)

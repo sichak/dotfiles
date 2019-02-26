@@ -1,6 +1,4 @@
 " .vimrc
-"
-" Maintained by Shawn Sichak
 
 let $VIM_HOME=$HOME.'/.vim'
 

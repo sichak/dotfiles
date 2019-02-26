@@ -1,7 +1,4 @@
 " plugins.appearance.vim
-"
-" Maintained by Shawn Sichak
-
 
 "" Plugin: Airline {{{
   " Use statusline more effective

@@ -1,7 +1,4 @@
 " plugins.integration.vim
-"
-" Maintained by Shawn Sichak
-
 
 "" Plugin: Github Dashboard {{{
   " Browse Github events in Vim
@@ -10,5 +7,5 @@
 
 "" Plugin: Hackernews {{{
   " Browse Hacker News inside Vim
-  Plug 'ryanss/vim-hackernews'
+  Plug 'adelarsq/vim-hackernews'
 "" }}}

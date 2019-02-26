@@ -1,7 +1,4 @@
 " theme.vim
-"
-" Maintained by Shawn Sichak
-
 
 " Enable 256 colors in vim
 set t_Co=256

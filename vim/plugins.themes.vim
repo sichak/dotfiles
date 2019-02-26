@@ -1,7 +1,4 @@
 " plugins.themes.vim
-"
-" Maintained by Shawn Sichak
-
 
 "" Theme: Molokai {{{
   Plug 'tomasr/molokai'
