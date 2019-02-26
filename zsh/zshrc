@@ -1,38 +1,38 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load.
-ZSH_THEME="sichaks"
+# Set name of the theme to load
+ZSH_THEME="pygmalion"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git colored-man colorize pip python brew osx zsh-syntax-highlighting)
 
-# User configuration
+# User Configuration
 source $ZSH/oh-my-zsh.sh
 
-# Auto move into directory without 'cd'
-setopt AUTO_CD
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Set brew Path
-[[ :$PATH: == *:$HOME/.bin:* ]] || PATH=$HOME/.bin:$PATH
+# pyenv
+eval "$(pyenv init -)"
 
-export EDITOR="vim"
+# Add commonly used folders to $PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# vi style incremental search
-bindkey '^R' history-incremental-search-backward
-bindkey '^S' history-incremental-search-forward
-bindkey '^P' history-search-backward
-bindkey '^N' history-search-forward
+# Specify default editor. Possible values: vim, nano, ed etc.
+export EDITOR=vim
 
-# Set JDK Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/java/Contents/Home
-export PATH="$JAVA_HOME:$PATH"
+# Add ~/bin to PATH
+export PATH=$HOME/bin:$PATH
 
-# Ruby
+# Add sbin to PATH
+export PATH=/usr/local/sbin:$PATH
+
+# Add .local/bin to PATH
+export PATH=$HOME/.local/bin:$PATH
+
+# Add rbenv shim to PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
-# Aliases
-alias vi=vim
+# Required rbenv eval
+eval "$(rbenv init -)"
