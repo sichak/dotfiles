@@ -7,3 +7,6 @@
   " Bring the 256 color version
   let g:rehash256=1
 "" }}}
+
+" enable fold settings for {{{ }}}
+" vim:foldmethod=marker:foldlevel=0

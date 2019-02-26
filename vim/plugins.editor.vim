@@ -23,3 +23,6 @@
   " No highlight when the file is read-only
   let g:lengthmatters_exclude_readonly=1
 "" }}}
+
+" enable fold settings for {{{ }}}
+" vim:foldmethod=marker:foldlevel=0

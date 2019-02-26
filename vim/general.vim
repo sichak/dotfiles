@@ -41,3 +41,6 @@ set ttyfast
   " Do smart autoindenting when starting a new line
   set smartindent
 """ }}}
+
+" enable fold settings for {{{ }}}
+" vim:foldmethod=marker:foldlevel=0

@@ -46,3 +46,6 @@
   \ 'ruby', 'vim', 'sh', 'zsh', 'matlab', 'snippets'
   \ ] }
 "" }}}
+
+" enable fold settings for {{{ }}}
+" vim:foldmethod=marker:foldlevel=0

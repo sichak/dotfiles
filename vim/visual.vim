@@ -50,3 +50,6 @@ set conceallevel=0
   " Highlight dynamically as pattern is typed
   set incsearch
 """ }}}
+
+" enable fold settings for {{{ }}}
+" vim:foldmethod=marker:foldlevel=0

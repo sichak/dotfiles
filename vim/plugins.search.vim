@@ -23,3 +23,6 @@
   autocmd bufenter * if (winnr('$') == 1 && exists('b:NERDTree')
   \ && b:NERDTree.isTabTree()) | q | endif
 "" }}}
+
+" enable fold settings for {{{ }}}
+" vim:foldmethod=marker:foldlevel=0
