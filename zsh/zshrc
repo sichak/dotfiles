@@ -17,7 +17,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(pyenv init -)"
 
 # Add commonly used folders to $PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Specify default editor. Possible values: vim, nano, ed etc.
 export EDITOR=vim
