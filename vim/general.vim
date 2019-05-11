@@ -8,6 +8,8 @@ set history=256
 set clipboard=unnamed
 " Optimize for fast terminal connections
 set ttyfast
+" Allow backspace key
+set backspace=indent,eol,start
 
 """ Folding {{{
   " Turn on folding
@@ -32,6 +34,8 @@ set ttyfast
   set softtabstop=4
   " Set the default shift width for indents
   set shiftwidth=4
+  " Set text width
+  set textwidth=79
   " Make tabs into spaces (set by tabstop)
   set expandtab
   " Smarter tab levels
@@ -40,6 +44,8 @@ set ttyfast
   set autoindent
   " Do smart autoindenting when starting a new line
   set smartindent
+  " Set file format
+  set fileformat=unix
 """ }}}
 
 " enable fold settings for {{{ }}}

@@ -24,5 +24,15 @@
   let g:lengthmatters_exclude_readonly=1
 "" }}}
 
+"" Plugin: Surround {{{
+  " Highlight the flooding part of an overly long line
+  Plug 'tpope/vim-surround'
+"" }}}
+
+"" Plugin: Auto-pairs {{{
+  " Insert or delete in pairs
+  Plug 'jiangmiao/auto-pairs'
+"" }}}
+
 " enable fold settings for {{{ }}}
 " vim:foldmethod=marker:foldlevel=0

@@ -11,8 +11,7 @@
 
 "" Plugin: Syntastic {{{
   " Syntax checking for Vim with external syntax checker
-  " TODO: Too slow because of synchronous job
-  " Plug 'scrooloose/syntastic'
+  Plug 'vim-syntastic/syntastic'
   set statusline+=%#warningmsg#
   set statusline+=%{SyntasticStatuslineFlag()}
   set statusline+=%*
@@ -24,18 +23,8 @@
   " Symbols
   let g:syntastic_error_symbol='✘'
   let g:syntastic_warning_symbol='▲'
-  " For C / C++
-  let g:syntastic_cpp_compiler='clang++'
-  let g:syntastic_cpp_compiler_options=' -std=c++11'
   " For Python
   let g:syntastic_python_checkers=['flake8']
-  " For Scala & Java
-  " let g:syntastic_scala_checkers=['fsc', 'scalac']
-  " For Javascript & Node.JS
-  let g:syntastic_javascript_checkers=['eslint']
-  let s:eslint_path=system('PATH=$(npm bin):$PATH && which eslint')
-  let b:syntastic_javascript_eslint_exec=substitute(s:eslint_path,
-  \ '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
   " For Shell Script(sh, bash)
   let g:syntastic_sh_checkers=['shellcheck']
 "" }}}
@@ -47,5 +36,26 @@
   \ ] }
 "" }}}
 
+"" Plugin: YouCompleteMe {{{
+" Autocomplete for Vim
+  Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer' }
+  " Close auto-complete window when finished
+  let g:ycm_autoclose_preview_window_after_completion=1
+  " goto definition
+  map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"" }}}
+
+"" Plugin: Flake8 {{{
+" PEP 8 checking
+  Plug 'nvie/vim-flake8'
+  " Python highlighting
+  let python_highlight_all=1
+"" }}}
+
+"" Plugin: Fugitive {{{
+" Vim Git wrapper
+  Plug 'tpope/vim-fugitive'
+"" }}}
+"
 " enable fold settings for {{{ }}}
 " vim:foldmethod=marker:foldlevel=0
