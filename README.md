@@ -14,7 +14,7 @@
 
 <br />
 
-**These dotfiles** contains awesome configurations for powerfully customized Vim, Zsh and Tmux environments.
+**These dotfiles** contain configurations for my customized Vim, Zsh and Tmux environments.
 
 <div align="center">
 </div>

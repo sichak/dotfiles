@@ -15,11 +15,6 @@ set showcmd
 set showmatch
 " Bracket blinking
 set matchtime=5
-" Mark 80th column with a highlight color
-if exists('+colorcolumn')
-  set colorcolumn=80
-  highlight ColorColumn ctermbg=gray
-endif
 " Highlight current line
 set cursorline
 " Show cursorline for active window only
@@ -40,7 +35,7 @@ set laststatus=2
 set conceallevel=0
 " Use a block cursor in normal mode, i-beam cursor in insertmode
 
-""" Match and search {{{
+""" Match and search
   " Highlight searches
   set hlsearch
   " Ignore case of searches
@@ -49,7 +44,3 @@ set conceallevel=0
   set smartcase
   " Highlight dynamically as pattern is typed
   set incsearch
-""" }}}
-
-" enable fold settings for {{{ }}}
-" vim:foldmethod=marker:foldlevel=0

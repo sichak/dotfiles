@@ -1,5 +1,7 @@
 " theme.vim
 
+" True-color
+set termguicolors
 " Enable 256 colors in vim
 set t_Co=256
 " Disable Background Color Erase (BCE) so that color schemes
@@ -11,4 +13,4 @@ endif
 " Set to 'light' to use colors that look good on a light background
 set background=dark
 " Set colorscheme
-colorscheme molokai
+colorscheme onedark
