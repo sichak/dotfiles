@@ -13,17 +13,11 @@
   let g:airline#extensions#ale#enabled = 1
   let g:ale_linters = {'go': ['gopls'],}
 
-  """ Plugin: Endwise
+""" Plugin: Endwise
   " Wisely add `end` in ruby, vim, etc
   Plug 'tpope/vim-endwise', { 'for': [
   \ 'ruby', 'vim', 'sh', 'zsh', 'matlab', 'snippets'
   \ ] }
-
-""" Plugin: YouCompleteMe
-  " Autocomplete for Vim
-  Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer' }
-  " Close auto-complete window when finished
-  let g:ycm_autoclose_preview_window_after_completion=1
 
 """ Plugin: Fugitive
   " Vim Git wrapper
@@ -38,3 +32,7 @@
   Plug 'hashivim/vim-terraform'
   let g:terraform_align=1
   let g:terraform_fmt_on_save=1
+
+""" Plugin: YouCompleteMe
+  " Vim Autocomplete
+  Plug 'ycm-core/YouCompleteMe'
