@@ -7,7 +7,6 @@
 
 <br />
 
-
 ## <a name="usage">Usage
 
 ```sh
@@ -20,7 +19,6 @@ $ vim +PlugInstall +qall now
 
 <img src="https://raw.githubusercontent.com/sichak/dotfiles/master/vim/screenshot.png" align="left"/>
 
-<br />
 <br />
 
 ## <a name="license">License
