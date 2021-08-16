@@ -6,12 +6,3 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 <br />
-
-## <a name="usage">Usage
-
-```sh
-$ cd ~
-$ git clone --recursive https://github.com/sichak/zshrc ~/.zsh
-$ ln -s .zsh/zshrc .zshrc
-$ ln -s .zsh/zshenv .zshenv
-```

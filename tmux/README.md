@@ -4,13 +4,3 @@
 > *TMUX Configuration*
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-
-<br />
-
-## Usage
-
-```sh
-$ cd ~
-$ git clone --recursive https://github.com/sichak/tmux-conf ~/.tmux
-$ ln -s .tmux/tmux.conf .tmux.conf
-```

@@ -25,7 +25,23 @@
 ```bash
 $ git clone https://github.com/sichak/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
-$ ./install
+```
+
+##### tmux
+```
+$ ln -s tmux/tmux.conf .tmux.conf
+```
+
+##### Vim
+```
+$ ln -s vim/vimrc .vimrc
+$ vim +PlugInstall +qall now
+```
+
+##### Zsh
+```
+$ ln -s zsh/zshrc .zshrc
+$ ln -s zsh/zshenv .zshenv
 ```
 
 ### Dependencies

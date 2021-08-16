@@ -7,14 +7,6 @@
 
 <br />
 
-## <a name="usage">Usage
-
-```sh
-$ cd ~
-$ git clone https://github.com/sichak/vimrc ~/.vim
-$ ln -s .vim/vimrc .vimrc
-$ vim +PlugInstall +qall now
-```
 ## Screenshot
 
 <img src="https://raw.githubusercontent.com/sichak/dotfiles/master/vim/screenshot.png" align="left"/>
