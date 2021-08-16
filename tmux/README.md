@@ -7,9 +7,6 @@
 
 <br />
 
-[**This TMUX configuration**](https://github.com/sichak/tmux-conf) is written by [sichak](https://github.com/sichak/) to improve the environment in TMUX.
-
-
 ## Usage
 
 ```sh
@@ -17,11 +14,3 @@ $ cd ~
 $ git clone --recursive https://github.com/sichak/tmux-conf ~/.tmux
 $ ln -s .tmux/tmux.conf .tmux.conf
 ```
-
-
-## Contact
-
-
-## License
-
-Provided under the terms of the [MIT License](https://github.com/posquit0/tmux-conf/blob/master/LICENSE).

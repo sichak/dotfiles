@@ -14,7 +14,7 @@
 
 <br />
 
-**These dotfiles** contain configurations for my customized Vim, Zsh and Tmux environments.
+**These dotfiles** contain configurations for my customized Vim, Zsh, and Tmux environments.
 
 <div align="center">
 </div>
@@ -32,11 +32,3 @@ $ ./install
 ### Dependencies
 
 - [**Git**](https://git-scm.com/): my dotfiles are managed using `git`
-
-
-## Contact
-
-
-## License
-
-[MIT](https://github.com/sichak/dofiles/blob/master/LICENSE)

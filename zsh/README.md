@@ -7,9 +7,6 @@
 
 <br />
 
-[**This Zsh configuration**](https://github.com/sichak/zshrc) is written by [sichak](https://github.com/sichak/) to improve the environment in Zshell.
-
-
 ## <a name="usage">Usage
 
 ```sh
@@ -18,10 +15,3 @@ $ git clone --recursive https://github.com/sichak/zshrc ~/.zsh
 $ ln -s .zsh/zshrc .zshrc
 $ ln -s .zsh/zshenv .zshenv
 ```
-
-## <a name="contact">Contact
-
-
-## <a name="license">License
-
-- [MIT Liense](https://github.com/posquit0/node-iamporter/blob/master/LICENSE)
