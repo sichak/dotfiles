@@ -28,18 +28,18 @@ cd ~/.dotfiles
 ```
 
 ##### tmux
-```
+```bash
 ln -s tmux/tmux.conf .tmux.conf
 ```
 
 ##### Vim
-```
+```bash
 ln -s vim/vimrc .vimrc
 vim +PlugInstall +qall now
 ```
 
 ##### Zsh
-```
+```bash
 ln -s zsh/zshrc .zshrc
 ln -s zsh/zshenv .zshenv
 ```
