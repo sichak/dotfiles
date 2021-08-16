@@ -14,12 +14,11 @@
 
 <br />
 
+<div align="center">
+
 **These dotfiles** contain configurations for my customized Vim, Zsh, and Tmux environments.
 
-<div align="center">
 </div>
-
-<br />
 
 ## Usage
 
