@@ -18,9 +18,3 @@ $ vim +PlugInstall +qall now
 ## Screenshot
 
 <img src="https://raw.githubusercontent.com/sichak/dotfiles/master/vim/screenshot.png" align="left"/>
-
-<br />
-
-## <a name="license">License
-
-- [MIT Liense](https://github.com/sichak/dofiles/blob/master/LICENSE)
