@@ -49,6 +49,9 @@ export PATH=$HOME/.local/bin:$PATH
 # Add rbenv shim to PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 
+# Add binutils to PATH
+export PATH="/usr/local/opt/binutils/bin:$PATH"
+
 # Required rbenv eval
 if command -v rbenv 1>/dev/null 2>&1; then
   eval "$(rbenv init -)"
@@ -66,10 +69,8 @@ export GO111MODULE=on
 
 # Yubikey SSH
 export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
-export GPG_TTY=$(tty)
 
 # Load custom aliases
 if [ -f ~/.zsh/zshalias ]; then
     source ~/.zsh/zshalias
 fi
-
