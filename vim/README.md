@@ -18,8 +18,9 @@ $ vim +PlugInstall +qall now
 ```
 ## Screenshot
 
-<img src="https://raw.githubusercontent.com/sichak/dotfiles/master/vim/screenshot.png?v=3&s=200" align="left" width="500px" height="500px"/>
+<img src="https://raw.githubusercontent.com/sichak/dotfiles/master/vim/screenshot.png?v=3&s=200" align="left" width="750" height="1500"/>
 
+<br />
 
 ## <a name="license">License
 
