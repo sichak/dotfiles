@@ -18,7 +18,7 @@ $ vim +PlugInstall +qall now
 ```
 ## Screenshot
 
-<img src="https://raw.githubusercontent.com/sichak/dotfiles/master/vim/screenshot.png?v=3&s=200" align="left" width="750" height="1500"/>
+<img src="https://raw.githubusercontent.com/sichak/dotfiles/master/vim/screenshot.png" align="left"/>
 
 <br />
 
