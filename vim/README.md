@@ -7,8 +7,6 @@
 
 <br />
 
-[**This VIM configuration**](https://github.com/sichak/vimrc) is written by [sichak](https://github.com/sichak/) to improve the environment in VIM.
-
 
 ## <a name="usage">Usage
 
@@ -18,8 +16,9 @@ $ git clone https://github.com/sichak/vimrc ~/.vim
 $ ln -s .vim/vimrc .vimrc
 $ vim +PlugInstall +qall now
 ```
+## Screenshot
 
-## <a name="contact">Contact
+<img src="https://raw.githubusercontent.com/sichak/dotfiles/master/vim/screenshot.png?v=3&s=200" align="left" width="500px" height="500px"/>
 
 
 ## <a name="license">License

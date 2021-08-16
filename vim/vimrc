@@ -1,26 +1,37 @@
-" .vimrc
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  Vimrc
+"
+"  Author  : Shawn Sichak - @sichak
+"  URL     : https://github.com/sichak/dotfiles
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" This file contains the minimal settings to set the foundation, with the
+" majority of the configuration and settings living in files spread between
+" vim/rcfiles and vim/rcplugins
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Set Vim home
 let $VIM_HOME=$HOME.'/.vim'
 
-""" General Configuration
-if filereadable(expand('$VIM_HOME/general.vim'))
-  source $VIM_HOME/general.vim
-endif
-if filereadable(expand('$VIM_HOME/key-mapping.vim'))
-  source $VIM_HOME/key-mapping.vim
-endif
-if filereadable(expand('$VIM_HOME/visual.vim'))
-  source $VIM_HOME/visual.vim
-endif
+" Need to set the leader before defining any leader mappings
+let mapleader = "\<Space>"
 
-""" Plugin Configuration
-" All the vim plugins are managed by 'vim-plug'
-" List & configuration of plugins separated to several files 'plugins.*.vim'
-if filereadable(expand('$VIM_HOME/plugins.vim'))
-  source $VIM_HOME/plugins.vim
-endif
+" Function to source in all config files
+function! s:SourceConfigFilesIn(directory)
+  let directory_splat = '$VIM_HOME/' . a:directory . '/*'
+  for config_file in split(glob(directory_splat), '\n')
+    if filereadable(config_file)
+      execute 'source' config_file
+    endif
+  endfor
+endfunction
 
-""" Theme Configuration
-if filereadable(expand('$VIM_HOME/theme.vim'))
-  source $VIM_HOME/theme.vim
-endif
+" Plugin configuration
+" All vim plugins are managed by 'vim-plug'
+call plug#begin('$VIM_HOME/plugged')
+call s:SourceConfigFilesIn('rcplugins')
+call plug#end()
+
+" Vim configuration
+call s:SourceConfigFilesIn('rcfiles')
