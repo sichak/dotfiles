@@ -11,7 +11,7 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize pip python brew osx)
+plugins=(git colorize pip python brew macos)
 
 ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
 pasteinit() {
@@ -35,7 +35,7 @@ source $HOME/.zsh/zsh-syntax-highlighting.zsh
 export PATH="/usr/local/bin:/usr/local:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Specify default editor. Possible values: vim, nano, ed etc.
-export EDITOR=vim
+export EDITOR=nvim
 
 # Add ~/bin to PATH
 export PATH=$HOME/bin:$PATH
@@ -74,3 +74,7 @@ export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
 if [ -f ~/.zsh/zshalias ]; then
     source ~/.zsh/zshalias
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

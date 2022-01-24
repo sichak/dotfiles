@@ -1,0 +1,1 @@
+Plug 'ellisonleao/glow.nvim'

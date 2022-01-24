@@ -11,6 +11,3 @@
   set backspace=indent,eol,start
   " Set encoding
   set encoding=utf-8
-  " Allow cursor keys in insert mode
-  set esckeys
-

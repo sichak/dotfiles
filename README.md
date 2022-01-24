@@ -24,26 +24,23 @@
 
 ```bash
 git clone https://github.com/sichak/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
+cd ~
 ```
 
 ##### tmux
 ```bash
-ln -s tmux/tmux.conf .tmux.conf
+ln -s .dotfiles/tmux/tmux.conf .tmux.conf
 ```
 
 ##### Vim
 ```bash
-ln -s vim/vimrc .vimrc
+ln -s .dotfiles/vim .vim
+ln -s .dotfiles/vim/vimrc .vimrc
 vim +PlugInstall +qall now
 ```
 
 ##### Zsh
 ```bash
-ln -s zsh/zshrc .zshrc
-ln -s zsh/zshenv .zshenv
+ln -s .dotfiles/zsh/zshrc .zshrc
+ln -s .dotfiles/zsh/zshenv .zshenv
 ```
-
-### Dependencies
-
-- [**Git**](https://git-scm.com/): my dotfiles are managed using `git`
